@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Which Fargoan are you?</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<main>
+		<h1>Which <img src="fargoan.png" alt="Fargoan"> are you?</h1>
+		<button id="start-button">Start quiz</button>
+
+		<div class="question" id="windchill">
+			<h2>When Hutch says the windchill is -30, you</h2>
+			<form action="">
+				<input type="radio" name="windchill" value="coat">switch from your fall coat to your winter coat.<br>
+				<input type="radio" name="windchill" value="coat">wear a lot of layers.  A LOT of layers.<br>
+				<input type="radio" name="windchill" value="coat">get out your good earflap hat.<br>
+				<input type="radio" name="windchill" value="coat">wonder who Hutch is and why anyone would live someplace that cold.
+			</form>
+			<button id="windchill-button">Next question</button>
+		</div>
+
+		<div class="question" id="flood">
+			<h2>You hear that the Red River is headed toward a record flood crest.  What do you do?</h2>
+			<form action="">
+				<input type="radio" name="flood" value="shovel">Get out your sandbagging gloves and grab a shovel.<br>
+				<input type="radio" name="flood" value="flee">Flee.<br>
+				<input type="radio" name="flood" value="jeez">Say "oh jeez".<br>
+				<input type="radio" name="flood" value="cnn">Think all that red water everywhere must look really cool.
+			</form>
+			<button id="flood-button">Next question</button>
+		</div>
+
+		<div class="question" id="lakes">
+			<h2>Your friend Bjorn asks you if you want to go to the lakes this weekend.  How do you reply?</h2>
+			<form action="">
+				<input type="radio" name="lakes" value="betcha">"You betcha!"<br>
+				<input type="radio" name="lakes" value="more">"How many are you going to?"<br>
+				<input type="radio" name="lakes" value="beach">"I'd rather go to the beach."
+				<button id="lakes-button">Next question</button>
+			</form>
+		</div>
+
+		<div class="question" id="weekend">
+			<h2>What are you doing this weekend?</h2>
+			<form action="">
+				<input type="radio" name="weekend" value="paint">Helping Bjorn paint the front room.<br>
+				<input type="radio" name="weekend" value="else">Going somewhere else.<br>
+				<input type="radio" name="weekend" value="murder">Solving a murder and then going to Lamaze, don't ya know.<br>
+				<input type="radio" name="weekend" value="whatever">Whatever.  Chillin'.
+			</form>
+			<button id="submit-button">Submit</button>
+		</div>
+
+		<div class="answer" id="fargoan">
+			<h2>You are a Fargoan.</h2>
+			<p>You understand the value of community, and you know people named Bjorn.
+		</div>
+
+		<div class="answer" id="transplant">
+			<h2>You are a Fargo transplant.</h2>
+			<p>You moved to Fargo from somewhere else, but you're starting to get the hang of it.</p>
+		</div>
+
+		<div class="answer" id="marge">
+			<h2>You are Marge Gunderson.</h2>
+			<p>You are actually from Brainerd.</p>
+		</div>
+		
+		<div class="answer" id="not-fargoan">
+			<h2>You are not a Fargoan.</h2>
+			<p>You probably didn't understand this quiz.  Oh fer funny!</p>
+		</div>
+
+	</main>
+</body>
+</html>
