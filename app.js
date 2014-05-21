@@ -1,16 +1,19 @@
 
 $(document).ready(function(){
-	$('input:radio').on('change',function(){
-		var $windchill = Number($("input[name=windchill]:checked").val());
-		var $flood= Number($("input[name=flood]:checked").val());
-		var $lakes = Number($("input[name=lakes]:checked").val());
-		var $weekend = Number($("input[name=weekend]:checked").val());
+	//var totalScore = 0;
+	var windchill = 0;
+	var flood = 0;
+	var lakes = 0;
+	var weekend = 0;
 
-		var $total_score = $windchill + $flood + $lakes + $weekend;
-		if ($total_score > 0) {
-			alert($total_score);
-		}
-  });
+	$('button').on('click',function(){
+		windchill = Number($("input[name=windchill]:checked").val());
+		flood= Number($("input[name=flood]:checked").val());
+		lakes = Number($("input[name=lakes]:checked").val());
+		weekend = Number($("input[name=weekend]:checked").val());
+	});
+
+	var totalScore = windchill + flood + lakes + weekend;
 
 	$("#start-button").click(function(){
 		$("#start-button").hide();
@@ -38,7 +41,17 @@ $(document).ready(function(){
 
 	$("#submit-button").click(function(){
 		$("#weekend").hide();
-		$(".answer").show(1000);
+
+		if (totalScore <= 6){
+			$('#fargoan').show();
+		} else if (totalScore >= 6 && totalScore <= 11 ){
+			$('#transplant').show();
+		} else if (totalScore == 12){
+			$('#marge').show();
+		} else {
+			$('#not-fargoan').show();
+		}
+		
 	});
 });
 
