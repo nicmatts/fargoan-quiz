@@ -2,37 +2,100 @@ body {
 	font-family: 'neucha', sans-serif;
 	font-size: 150%;
 	background: url('fargo-bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 main {
 	width: 780px;
+	height: 585px;
 	margin: 2em auto;
-	border: 1px solid black;
-	background: #e1e5ec;
-}
-
-h1 {
+	background: #FAFAFA;
+	border-radius: 3px;
+	padding: 0.5em 0;
 	text-align: center;
 }
 
-.question {
-	border: 1px solid black;
+.button {
+	-moz-box-shadow: 0px 1px 5px 0px #bbf0f0;
+	-webkit-box-shadow: 0px 1px 5px 0px #bbf0f0;
+	box-shadow: 0px 1px 5px 0px #bbf0f0;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #226363), color-stop(1, #42c1c1) );
+	background:-moz-linear-gradient( center top, #226363 5%, #42c1c1 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#226363', endColorstr='#42c1c1');
+	background-color:#226363;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #42c1c1;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:48px;
+	line-height:48px;
+	width:162px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:2px 2px 0px #226363;
 }
 
-#windchill, #flood, #lakes, #weekend, .answer {
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #42c1c1), color-stop(1, #226363) );
+	background:-moz-linear-gradient( center top, #42c1c1 5%, #226363 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#42c1c1', endColorstr='#226363');
+	background-color:#42c1c1;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+/* This button was generated using CSSButtonGenerator.com */
+
+.question {
+	text-align: left;
+}
+
+#windchill, #flood, #lakes, #weekend, #startover, .answer {
 	display: none;
 	padding: 20px;
 	position: relative;
+	/*height: 400px;
+	width: 600px;*/
+}
+
+#startover, .answer {
+	padding: 0;
 }
 
 .progress-container {
 	position: absolute;
 	top: 10px;
-	right: 10px;
-	height: 10px;
+	left: 10px;
+	height: 26px;
 	width: 80px;
+	border: 1px solid #055555;
 }
 
 .progress {
-	background: blue;
+	background: #226363;
+	height: 26px;
 }
+
+/*#startover {
+	text-align: center;
+}*/

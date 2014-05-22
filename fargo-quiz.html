@@ -6,17 +6,19 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script src="app.js"></script>
 	<!-- background image courtesy of Mark Danielson: www.flickr.com/mrbula/6053208183 -->
 </head>
 <body>
 	<main>
 		<h1>Which <img src="fargoan.png" alt="Fargoan"> are you?</h1>
-		<button id="start-button" type="submit">Start quiz</button>
+		<a href= "#" class="button" id="start-button">Start quiz</a>
 
 		<div class="question" id="windchill">
 			<div class="progress-container">
-				<div class="progress"></div>
+				<div class="progress">&nbsp;</div>
 			</div>
 			<h2>When Hutch says the windchill is -30, you</h2>
 			<form action="">
@@ -25,12 +27,12 @@
 				<input type="radio" name="windchill" value="3">get out your good earflap hat.<br>
 				<input type="radio" name="windchill" value="4">wonder who Hutch is and why anyone would live someplace that cold.
 			</form>
-			<button id="windchill-button">Next question</button>
+			<a href= "#" class="button" id="windchill-button">Next question</a>
 		</div>
 
 		<div class="question" id="flood">
 			<div class="progress-container">
-				<div class="progress"></div>
+				<div class="progress">&nbsp;</div>
 			</div>
 			<h2>You hear that the Red River is headed toward a record flood crest.  What do you do?</h2>
 			<form action="">
@@ -39,12 +41,12 @@
 				<input type="radio" name="flood" value="3">Say "oh for Pete's sake".<br>
 				<input type="radio" name="flood" value="4">Think all that red water everywhere must look really cool.
 			</form>
-			<button id="flood-button">Next question</button>
+			<a href= "#" class="button" id="flood-button">Next question</a>
 		</div>
 
 		<div class="question" id="lakes">
 			<div class="progress-container">
-				<div class="progress"></div>
+				<div class="progress">&nbsp;</div>
 			</div>
 			<h2>Your friend Bjorn asks you if you want to go to the lakes this weekend.  How do you reply?</h2>
 			<form action="">
@@ -53,12 +55,12 @@
 				<input type="radio" name="lakes" value="3">"I'm not sure I agree with you a hundred percent on your police work, there, Lou."<br>
 				<input type="radio" name="lakes" value="4">"I'd rather go to the beach."
 			</form>
-			<button id="lakes-button">Next question</button>
+			<a href= "#" class="button" id="lakes-button">Next question</a>
 		</div>
 
 		<div class="question" id="weekend">
 			<div class="progress-container">
-				<div class="progress"></div>
+				<div class="progress">&nbsp;</div>
 			</div>
 			<h2>What are you doing this weekend?</h2>
 			<form action="">
@@ -67,9 +69,9 @@
 				<input type="radio" name="weekend" value="3">Solving a murder and then going to Lamaze, don'tcha know.<br>
 				<input type="radio" name="weekend" value="4">Whatever.  Chillin'.
 			</form>
-			<button id="submit-button">Submit</button>
+			<a href= "#" class="button" id="submit-button">Submit</a>
 		</div>
-
+	
 		<div class="answer" id="fargoan">
 			<h2>You are a Fargoan.</h2>
 			<p>You understand the value of community, and you know people named Bjorn.
@@ -89,7 +91,11 @@
 			<h2>You are not a Fargoan.</h2>
 			<p>You probably didn't understand this quiz.  Oh fer funny!</p>
 		</div>
-
+		
+		<div id="startover">
+			<h3>Want to try again?</h3>
+			<a href="#" class="button" id="reload">Oh fer sure!</a>
+		</div>
 	</main>
 </body>
 </html>
