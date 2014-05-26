@@ -1,15 +1,15 @@
 
 $(document).ready(function(){
-	//var totalScore = 0;
+	//initialize scores
 	var windchill = 0;
 	var flood = 0;
 	var lakes = 0;
 	var weekend = 0;
 
+	// advance questions on button clicks
 	$("#start-button").click(function(){
 		$("#start-button").hide();
 		$("#windchill").show(1000);
-		//$("#windchill").toggle("slide", { direction: "left" }, 1000);
 		$('.progress').css({"width": "20px"});
 	});
 
@@ -41,9 +41,8 @@ $(document).ready(function(){
 		$("#weekend").hide();
 		weekend = Number($("input[name=weekend]:checked").val());
 
+		//calculate total of answers
 		var totalScore = windchill + flood + lakes + weekend;
-
-		//alert(totalScore);
 
 		if (totalScore <= 6){
 			$("#fargoan").show();
