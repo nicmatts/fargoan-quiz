@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Which Fargoan are you?</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="ie.css">
+	<![endif]-->
 	<link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
@@ -22,7 +25,7 @@
 	</script>
 </head>
 <body>
-	<main>
+	<div classs="main">
 		<h1>Which <img src="fargoan.png" alt="Fargoan"> are you?</h1>
 		<a href= "#" class="button" id="start-button">Start quiz</a>
 
@@ -31,7 +34,7 @@
 				<div class="progress">&nbsp;</div>
 			</div>
 			<h2>When Hutch says the windchill is -30, you</h2>
-			<form action="">
+			<form action="get">
 				<input type="radio" name="windchill" value="1" checked>switch from your fall coat to your winter coat.<br>
 				<input type="radio" name="windchill" value="2">wear a lot of layers.  A LOT of layers.<br>
 				<input type="radio" name="windchill" value="3">get out your good earflap hat.<br>
@@ -45,7 +48,7 @@
 				<div class="progress">&nbsp;</div>
 			</div>
 			<h2>You hear that the Red River is headed toward a record flood crest.  What do you do?</h2>
-			<form action="">
+			<form action="#">
 				<input type="radio" name="flood" value="1" checked>Get out your sandbagging gloves and grab a shovel.<br>
 				<input type="radio" name="flood" value="2">Flee.<br>
 				<input type="radio" name="flood" value="3">Say "oh for Pete's sake".<br>
@@ -59,7 +62,7 @@
 				<div class="progress">&nbsp;</div>
 			</div>
 			<h2>Your friend Bjorn asks you if you want to go to the lakes this weekend.  How do you reply?</h2>
-			<form action="">
+			<form action="#">
 				<input type="radio" name="lakes" value="1" checked>"You betcha!"<br>
 				<input type="radio" name="lakes" value="2">"How many are you going to?"<br>
 				<input type="radio" name="lakes" value="3">"I'm not sure I agree with you a hundred percent on your police work, there, Lou."<br>
@@ -73,7 +76,7 @@
 				<div class="progress">&nbsp;</div>
 			</div>
 			<h2>What are you doing this weekend?</h2>
-			<form action="">
+			<form action="#">
 				<input type="radio" name="weekend" value="1" checked>Helping Bjorn paint the front room.<br>
 				<input type="radio" name="weekend" value="2">Going somewhere else.<br>
 				<input type="radio" name="weekend" value="3">Solving a murder and then going to Lamaze, don'tcha know.<br>

@@ -1,12 +1,17 @@
+html { 
+  background: url(fargo-bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
 	font-family: 'neucha', sans-serif;
 	font-size: 150%;
-	background: url('fargo-bg.png');
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
-main {
+.main {
 	width: 780px;
 	height: 585px;
 	margin: 2em auto;
